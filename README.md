@@ -1,10 +1,11 @@
-# this project about mini rag app
+# This Project About Mini RAG App
 
 This is a minimal implementation of the RAG model for question answering.
 
 ## Requirements
-
+```bash
 Python 3.10.11 or later
+```
 
 #### Install Python using MiniConda
 
