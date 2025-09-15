@@ -21,3 +21,21 @@ Python 3.10.11 or later
 ```bash
     $ conda activate mini-rag
 ```
+
+## Installation
+
+#### Install the requirements Packages
+```bash
+    $ pip install -r requirements.txt
+```
+
+#### setup the environment variables 
+```bash
+    $ cp .env.example env
+```
+Set your environment variables in the `.env` file. Like `OPENAI_API_KEY` value.
+
+## Run The FastAPI Server
+```bash
+    $ uvicorn main:app --reload --host 0.0.0.0 --port 5000
+```
