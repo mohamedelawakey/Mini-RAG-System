@@ -4,3 +4,6 @@ uvicorn==0.35.0
 python-dotenv==1.1.1
 pydantic-settings==2.10.1
 aiofiles==24.1.0
+langchain==0.3.27
+langchain-community==0.3.29
+PyMuPDF==1.26.4
