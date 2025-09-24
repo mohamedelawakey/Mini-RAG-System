@@ -12,7 +12,7 @@ class Settings(BaseSettings):
     # File upload configs
     FILE_ALLOWED_TYPES: list[str]
     FILE_SIZE: int
-    FILE_DEFAULT_CHUNK_SIZE: int
+    FILE_CHUNK_SIZE: int
 
     # Load values from .env file
     model_config = SettingsConfigDict(
