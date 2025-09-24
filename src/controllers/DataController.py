@@ -47,7 +47,7 @@ class DataController(BaseController):
         else:
             return False, ResponseSignal.FILE_SIZE_EXCEEDED.value
 
-    def generate_unique_name(self, orig_name: str, project_id: str):
+    def generate_unique_filepath(self, orig_name: str, project_id: str):
         """
         Generate a unique file path for the uploaded file.
 
@@ -80,7 +80,7 @@ class DataController(BaseController):
                 random_key + "_" + cleaned_file_name
             )
 
-        return new_file_path
+        return new_file_path, random_key + "_" + cleaned_file_name
 
     def det_clean_file_name(self, orig_file_name: str):
         """
